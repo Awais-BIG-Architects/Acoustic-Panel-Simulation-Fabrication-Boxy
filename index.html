@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Quantico&display=swap" rel="stylesheet"> 
+
+
+    <style>
+      .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      margin-top: auto;
+      width: 80%;
+      height: 90%;
+      }
+
+      .logo {
+            width: 8%;
+            height: 8%;
+            margin: 2% 10% 2% 10%;
+      }
+
+
+      h1,h2,h3,H4{
+          
+          font-family: 'Electrolize', sans-serif;
+          
+          margin: 2.5% 10% 2.5% 10%;
+          
+          text-align: center;
+      }
+
+      p{
+          
+          font-family: 'Electrolize', sans-serif;
+          
+          margin: 2.5% 10% 2.5% 10%;
+          color: rgb(0, 0, 0);
+          
+          /* text-align: center; */
+      }
+
+
+      /* Solid border */
+      hr.solid {
+        border-top: 1.5px solid rgb(0, 0, 0); 
+        margin: 2.5% 10% 2.5% 10%;
+      }
+
+      /* hr.dim_solid {
+        border-top: 1.5px solid rgb(0, 0, 0);
+        margin: 2.5% 10% 2.5% 10%;  
+      } */
+
+      #more {display: none; 
+      }
+
+      #myBtn {display: block; 
+      margin: 2.5% 10% 2.5% 10%; 
+      }
+
+      .boxy {
+        border: 1px outset rgb(230, 230, 230);
+        background-color: rgb(230, 230, 230);    
+        text-align: center;
+        margin: 2.5% 10% 2.5% 10%;
+  
+      }
+
+
+    </style>
+
+    <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+      }
+}
+
+    </script>
+    
+  </head>
+
+
+
+
+<body>
+
+    <img src="logo.png"  class="logo">
+    <h2>ACOUSTIC [ SIMULATION ] </h2> 
+
+    <!-- <hr class="dim_solid"> -->
+
+    <!-- <h2>ASSEMBLY SEQUENCE</h2> -->
+
+    <img src="Acoustic_Panels_Performance_Comparison.gif"  class="center">
+    <!-- <img src="max.png"  class="center"> -->
+    <br>
+    <p>We simulated and compared geometric shapes
+    for optimized sound diffusion with customized post processing script over pachyderm acoustic. All the panels are
+     <span id="dots">...</span><span id="more"> fabricated for showcase. The application of this
+      research could be implemented in the designing of spaces which require optimum diffused sound.
+    </span>
+    </p> 
+    <button onclick="myFunction()" id="myBtn">read more</button>
+    
+
+    <hr class="solid">
+
+    <!-- <h2>MILLING PROCESS</h2>
+    <img src="process.jpg"  class="center">
+    <br> -->
+
+    <!-- <hr class="solid"> -->
+    
+    <h2>FABRICATION PASSPORT</h2>
+
+    <div class="boxy">
+    <p>
+      <strong>I.D: Barrel Acoustic Panel</strong> 
+      <br><br> 
+      <strong>Date: 16/02/2022</strong> 
+      <br><br> 
+      <strong>Fabrication Material: XPS</strong> 
+      <br><br> 
+      <strong>Milling Process: Robotic</strong>  
+      <br><br>
+      <strong>Global Dimensions: 210 x 210 x 50 mm</strong>
+      <br><br> 
+    <strong>Stock Cut-off: 32.8 %</strong>
+    <br><br>
+    <strong>Max.Diffusion: 60 %</strong>
+    <br><br>
+    </p> 
+    </div> 
+
+  <br>
+  <hr class="solid">
+  <br>
+
+
+</body> 
